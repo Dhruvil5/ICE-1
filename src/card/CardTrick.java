@@ -42,6 +42,15 @@ public class CardTrick {
         } else {
             System.out.println("Sorry.....Your card is not in the magic hand. :(");
         }
+        
+        Card luckyCard = new Card(8, "Diamonds");
+        boolean isLuckyCardInHand = search(magicHand, luckyCard);
+        
+        if (isLuckyCardInHand) {
+            System.out.println("Congratulations....The lucky card is in yourmagic hand!");
+        } else {
+            System.out.println("Sorry...the lucky card is not in your magic hand.");
+        }
     }
     
     private static int RandNum() {
