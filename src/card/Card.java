@@ -18,6 +18,8 @@ public class Card {
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
    
+   public Card(){
+   }
    public Card(int value ,String suit){
        this.suit=suit;
        this.value=value;
